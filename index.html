@@ -3,203 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio | Seus Projetos</title>
-    <style>
-        /* Configurações Gerais */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: #f4f7f6;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: #1a252f;
-            color: #fff;
-            padding: 2rem;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        header p {
-            font-size: 1.1rem;
-            color: #bdc3c7;
-        }
-
-        /* Container Principal */
-        .container {
-            max-width: 1100px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-
-        /* Seção Sobre */
-        .about-section {
-            background: #fff;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            margin-bottom: 2rem;
-        }
-
-        .about-section h2 {
-            margin-bottom: 1rem;
-            color: #2c3e50;
-        }
-
-        /* Grade de Projetos */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .project-card {
-            background: #fff;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.2s;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-        }
-
-        /* Placeholder para Imagem do Projeto */
-        .project-image {
-            background-color: #bdc3c7;
-            height: 200px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #7f8c8d;
-            font-weight: bold;
-        }
-
-        .project-info {
-            padding: 1.5rem;
-        }
-
-        .project-info h3 {
-            margin-bottom: 0.5rem;
-            color: #2c3e50;
-        }
-
-        .project-info p {
-            font-size: 0.95rem;
-            color: #555;
-            margin-bottom: 1rem;
-        }
-
-        .project-link {
-            display: inline-block;
-            background-color: #3498db;
-            color: #fff;
-            padding: 0.5rem 1rem;
-            text-decoration: none;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            transition: background 0.2s;
-        }
-
-        .project-link:hover {
-            background-color: #2980b9;
-        }
-
-        /* Rodapé / Contato */
-        footer {
-            background-color: #1a252f;
-            color: #fff;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 4rem;
-        }
-
-        footer h2 {
-            margin-bottom: 1rem;
-        }
-
-        .contact-links a {
-            color: #3498db;
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: bold;
-        }
-
-        .contact-links a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Meu Portfólio de Circuitos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen flex flex-col justify-between">
 
-    <header>
-        <h1>[Seu Nome Aqui]</h1>
-        <p>Desenvolvedor / Designer / Profissão</p>
+    <header class="w-full max-w-4xl mx-auto px-6 pt-16 pb-8 text-center">
+        <div class="inline-flex items-center gap-2 bg-indigo-950 border border-indigo-800 text-sm font-medium text-indigo-400 px-4 py-1.5 rounded-full mb-4">
+            <span>⚡ Tinkercad Lab</span>
+        </div>
+        <h1 class="text-3xl md:text-5xl font-extrabold text-white mb-4 tracking-tight">
+            Meus Projetos de Eletrônica
+        </h1>
+        <p class="text-slate-400 max-w-2xl mx-auto text-sm md:text-base">
+            Uma coleção de circuitos, simulações e automações desenvolvidas digitalmente na plataforma Tinkercad. Clique nos cards abaixo para visualizar e interagir com as criações.
+        </p>
     </header>
 
-    <div class="container">
-        
-        <section class="about-section">
-            <h2>Sobre Mim</h2>
-            <p>Escreva uma breve introdução sobre quem você é, suas principais habilidades e o que te motiva. Destaque suas especialidades e as tecnologias ou ferramentas que você mais domina.</p>
-        </section>
-
-        <h2 style="margin-bottom: 1.5rem; color: #2c3e50;">Meus Projetos</h2>
-        <section class="projects-grid">
+    <main class="w-full max-w-5xl mx-auto px-6 py-4 flex-grow">
+        <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-3xl mx-auto">
             
-            <div class="project-card">
-                <div class="project-image">Imagem do Projeto 1</div>
-                <div class="project-info">
-                    <h3>Nome do Projeto 1</h3>
-                    <p>Descrição breve do projeto. Explique o problema que ele resolve, as ferramentas utilizadas no desenvolvimento e o seu papel na execução.</p>
-                    <a href="#" class="project-link" target="_blank">Ver Projeto</a>
+            <div class="bg-slate-900 rounded-xl border border-slate-800 p-6 hover:border-indigo-500 transition-all duration-200 flex flex-col justify-between shadow-md">
+                <div>
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="text-xs font-semibold text-indigo-400 bg-indigo-950/50 px-2 py-0.5 rounded border border-indigo-900">Circuito</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Cool Hango Bojo</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Projeto de circuito e simulação desenvolvido na plataforma Tinkercad.
+                    </p>
+                </div>
+                
+                <div class="pt-4 border-t border-slate-800/60">
+                    <a href="https://www.tinkercad.com/things/d916UqMyrx4-cool-hango-bojo" target="_blank" class="w-full inline-block text-center text-xs font-semibold text-white bg-indigo-600 hover:bg-indigo-500 px-3 py-2 rounded-md transition shadow-sm">
+                        Ver Projeto no Tinkercad ↗
+                    </a>
                 </div>
             </div>
 
-            <div class="project-card">
-                <div class="project-image">Imagem do Projeto 2</div>
-                <div class="project-info">
-                    <h3>Nome do Projeto 2</h3>
-                    <p>Descrição breve do projeto. Explique o problema que ele resolve, as ferramentas utilizadas no desenvolvimento e o seu papel na execução.</p>
-                    <a href="#" class="project-link" target="_blank">Ver Projeto</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">Imagem do Projeto 3</div>
-                <div class="project-info">
-                    <h3>Nome do Projeto 3</h3>
-                    <p>Descrição breve do projeto. Explique o problema que ele resolve, as ferramentas utilizadas no desenvolvimento e o seu papel na execução.</p>
-                    <a href="#" class="project-link" target="_blank">Ver Projeto</a>
-                </div>
-            </div>
-
-        </section>
-    </div>
-
-    <footer>
-        <h2>Entre em Contato</h2>
-        <p>Estou sempre aberto a novas oportunidades e colaborações.</p>
-        <div class="contact-links" style="margin-top: 1rem;">
-            <a href="mailto:seu-email@exemplo.com">E-mail</a> | 
-            <a href="https://linkedin.com/in/seu-perfil" target="_blank">LinkedIn</a> | 
-            <a href="https://github.com/seu-usuario" target="_blank">GitHub</a>
-        </div>
-        <p style="margin-top: 1.5rem; font-size: 0.8rem; color: #bdc3c7;">&copy; 2026 [Seu Nome]. Todos os direitos reservados.</p>
-    </footer>
-
-</body>
-</html>
+            <div class="bg-slate-900 rounded-xl border border-slate-800 p-6 hover:border-indigo-500 transition-all duration-200 flex flex-col justify-between shadow-md">
+                <div>
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="text-xs font-semibold text-indigo-4
