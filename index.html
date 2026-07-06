@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio | Seus Projetos</title>
+    <style>
+        /* Configurações Gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1a252f;
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #bdc3c7;
+        }
+
+        /* Container Principal */
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* Seção Sobre */
+        .about-section {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .about-section h2 {
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+
+        /* Grade de Projetos */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .project-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Placeholder para Imagem do Projeto */
+        .project-image {
+            background-color: #bdc3c7;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #7f8c8d;
+            font-weight: bold;
+        }
+
+        .project-info {
+            padding: 1.5rem;
+        }
+
+        .project-info h3 {
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+
+        .project-info p {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+
+        .project-link {
+            display: inline-block;
+            background-color: #3498db;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+
+        .project-link:hover {
+            background-color: #2980b9;
+        }
+
+        /* Rodapé / Contato */
+        footer {
+            background-color: #1a252f;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        footer h2 {
+            margin-bottom: 1rem;
+        }
+
+        .contact-links a {
+            color: #3498db;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>[Seu Nome Aqui]</h1>
+        <p>Desenvolvedor / Designer / Profissão</p>
+    </header>
+
+    <div class="container">
+        
+        <section class="about-section">
+            <h2>Sobre Mim</h2>
+            <p>Escreva uma breve introdução sobre quem você é, suas principais habilidades e o que te motiva. Destaque suas especialidades e as tecnologias ou ferramentas que você mais domina.</p>
+        </section>
+
+        <h2 style="margin-bottom: 1.5rem; color: #2c3e50;">Meus Projetos</h2>
+        <section class="projects-grid">
+            
+            <div class="project-card">
+                <div class="project-image">Imagem do Projeto 1</div>
+                <div class="project-info">
+                    <h3>Nome do Projeto 1</h3>
+                    <p>Descrição breve do projeto. Explique o problema que ele resolve, as ferramentas utilizadas no desenvolvimento e o seu papel na execução.</p>
+                    <a href="#" class="project-link" target="_blank">Ver Projeto</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">Imagem do Projeto 2</div>
+                <div class="project-info">
+                    <h3>Nome do Projeto 2</h3>
+                    <p>Descrição breve do projeto. Explique o problema que ele resolve, as ferramentas utilizadas no desenvolvimento e o seu papel na execução.</p>
+                    <a href="#" class="project-link" target="_blank">Ver Projeto</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">Imagem do Projeto 3</div>
+                <div class="project-info">
+                    <h3>Nome do Projeto 3</h3>
+                    <p>Descrição breve do projeto. Explique o problema que ele resolve, as ferramentas utilizadas no desenvolvimento e o seu papel na execução.</p>
+                    <a href="#" class="project-link" target="_blank">Ver Projeto</a>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <footer>
+        <h2>Entre em Contato</h2>
+        <p>Estou sempre aberto a novas oportunidades e colaborações.</p>
+        <div class="contact-links" style="margin-top: 1rem;">
+            <a href="mailto:seu-email@exemplo.com">E-mail</a> | 
+            <a href="https://linkedin.com/in/seu-perfil" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/seu-usuario" target="_blank">GitHub</a>
+        </div>
+        <p style="margin-top: 1.5rem; font-size: 0.8rem; color: #bdc3c7;">&copy; 2026 [Seu Nome]. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
